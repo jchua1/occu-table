@@ -32,7 +32,7 @@ def pickWeighted():
 def direct():
     return render_template("main.html", link = "/occupations")
 
-@app.route("/occupations")                
+@app.route("/occupations")
 def tablefy():
     readToDict()
     j = pickWeighted()
