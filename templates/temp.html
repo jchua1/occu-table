@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      }
+      td, th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    </style>
+    <title> {{ title }} </title>
+  </head>
+
+  <body>
+    <center>
+      <table>
+	<tr>
+	  <th>Job Class</th>
+	  <th>Percentage</th>
+	  {% for i in table %}
+	<tr>
+	  <td> {{ i }} </td>
+	  <td> {{ table[i][0] }} </td>
+	</tr>
+	{% endfor %}
+      </table>
+      <br>
+      <font face = "arial">
+	You've been chosen to work in:
+	<br>
+	<b>
+	  <a href = '{{ link }}'>
+	    {{ job }}
+	  </a>
+	</b>
+    </center>
+  </body>
+</html>
+
+
