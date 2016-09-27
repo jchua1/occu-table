@@ -24,9 +24,5 @@ def pickWeighted():
             return job
     return job
 
-def getJob():
-    readToDict()
-    return pickWeighted()
-
 def getLink(job):
     return occs[job][1]
